@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tags: Personal Website to hone skills in frontend web development">
+    <title>Personal Website</title>
+    <meta name="author" content="Stuart Evans">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="index page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <!--<meta property="og:url" content="https://realtimestert.github.io/wdd230/">-->
+    <script src="scripts/burger.js" defer></script>
+    <script src="scripts/pageVisits.js" defer></script>
+    <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/links.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <div class="header-content">
+                <!--<img src="images/me2.jpg" alt="Stuart Evans" width="150">-->
+                <span>Personal Website</span>
+                <button id="darkmodeButton" class="darkmodetoggle" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="hero">
+            <picture></picture>
+        </div>
+        <h1>The Wonders of RGB</h1>
+        <div class="card-container">
+            <section class="card">
+                <h2>Links to Pages</h2>
+                <ul id="link-list"></ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <p>Athen, Georgia, USA</p>
+                <p>The current weather in Athens, Georgia is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    Page Visits: <span id="pagecounter">1</span>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <div class="iframe">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105915.94221116389!2d-83.47152297347465!3d33.944389414684515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f66d19b4b433b9%3A0x4d747202d69d617c!2sAthens%2C%20GA!5e0!3m2!1sen!2sus!4v1727997766269!5m2!1sen!2sus"
+            width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <footer>
+        <p>© <span id="year"></span> | Stuart Evans | Georgia | USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+
+</body>
+
+</html>

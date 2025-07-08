@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Home",
+        "url": "/index.html"
+    },
+    {
+        "name": "Game Development Blog",
+        "url": "/gamedev.html"
+    },
+    {
+        "name": "Family Recipes",
+        "url": "/recipes.html"
+    },
+    {
+        "name": "Cathode-Ray Tubes",
+        "url": "/crt.html"
+    },
+    {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/stuart-evans-06279b167/"
+    },
+    {
+        "name": "GitHub",
+        "url": "https://github.com/realtimestert"
+    },
+    {
+        "name": "Media Server",
+        "url": "http://155.186.197.196:8096/"
+    }
+]

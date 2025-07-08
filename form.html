@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="styles/form.css" rel="stylesheet">
+    <meta name="description" content="Form for website newsletter">
+    <meta name="author" content="Stuart Evans">
+    <meta property="og:title" content="form page">
+    <script src="scripts/burger.js" defer></script>
+</head>
+
+<body>
+
+    <div class="header-container">
+        <header>
+            <div class="header-content">
+                <button id="menu-toggle" class="hamburger" aria-label="Toggle menu">☰</button>
+                <button id="darkmodeButton" class="darkmodetoggle" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+            <nav id="menu-items" class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="crt.html">CRT Setup</a></li>
+                    <li><a href="recipes.html">Recipes I Love</a></li>
+                    <li><a href="gamedev.html">Game Development</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <h2>Form</h2>
+        <form method="get">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required
+                placeholder="Please enter your preferred Username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="At least 8 characters in length">
+            <label for="password2">Repeat Password</label>
+            <input type="password" id="password2" name="password2">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required
+                placeholder="Please enter a valid email address">
+            <label for="rating">Page Rating</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+            <button id="btnSubmit" type="submit">Sign Up!</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> | Stuart Evans | Georgia | USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+
+</body>
+
+</html>

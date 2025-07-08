@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <title>Recipe Viewer</title>
+    <script src="scripts/recipes.js"></script>
+    <script src="scripts/getDates.js" defer></script>
+</head>
+
+<body>
+    <h1>Recipes from family and friends</h1>
+
+    <select id="recipe-select">
+        <option value="chicken-curry.json">Chicken Curry</option>
+        <option value="carbonara.json">Pasta Bolognese</option>
+        <!-- Add more recipe options here -->
+    </select>
+
+    <div id="recipe-container">
+        <h2>Recipe Title</h2>
+        <ul id="ingredients"></ul>
+        <h3>Instructions</h3>
+        <ul id="instructions"></ul>
+    </div>
+
+</body>
+
+</html>

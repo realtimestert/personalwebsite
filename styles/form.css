@@ -1,0 +1,60 @@
+:root {
+    --border: black;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: none;
+    top: 100%;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu.open {
+    display: flex;
+}
+
+body {
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    line-height: 1.4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    position: relative;
+}
+
+header,
+nav,
+footer {
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 1rem;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+}
